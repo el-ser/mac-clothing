@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+
 import FormInput from "../form-input/form-input.component";
 import Button from "../button/button.component";
 import {
@@ -24,8 +25,6 @@ const SignUpForm = () => {
   };
 
   const handleSubmit = async (event) => {
-    console.log("password:", password);
-    console.log("confirmPassword:", confirmPassword);
     event.preventDefault();
 
     if (password !== confirmPassword) {
