@@ -1,3 +1,6 @@
+/**
+ * Not using this currently but saved for reference
+ */
 import { createContext, useState, useEffect } from "react";
 import {
   onAuthStateChangedListener,
